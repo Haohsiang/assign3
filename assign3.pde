@@ -156,7 +156,7 @@ switch (gameState){
       //hp
       fill(#CC0000);
       rectMode(CORNERS);
-      rect(10,3,hpX,27); //under
+      rect(10,4.2,hpX,24); //under
       image(hp, 0, 0); //above
      
      
