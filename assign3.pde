@@ -47,7 +47,7 @@ void setup () {
  
   //hp (top)
   fill(#CC0000);
-  hpX = (203-10)*20/100; //10<=hpX<=203, at least 20 points of blood 
+  hpX = (202-10)*20/100; //10<=hpX<=202, at least 20 points of blood 
   hp = loadImage("img/hp.png"); 
 }
 
@@ -163,32 +163,32 @@ switch (gameState){
       
      //when fighter touches treasure, including six situations
      if (treasureX < fighterX && treasureY < fighterY && treasureX + 41 > fighterX && treasureY > fighterY){
-       if(hpX<=203){hpX = hpX + (203-10)*10/100;} // add blood 10%
+       if(hpX<=202){hpX = hpX + (202-10)*10/100;} // add blood 10%
        treasureX = random(600); 
        treasureY = random(440);
      }
      if (treasureX < fighterX && treasureY > fighterY && treasureX + 41 > fighterX && treasureY < fighterY +51){
-       if(hpX<=203){hpX = hpX + (203-10)*10/100;}
+       if(hpX<=202){hpX = hpX + (202-10)*10/100;}
        treasureX = random(600);
        treasureY = random(440);
      }
      if (treasureX > fighterX && treasureY < fighterY && treasureX < fighterX + 51 && treasureY + 41 > fighterY){
-       if(hpX<=203){hpX = hpX + (203-10)*10/100;}
+       if(hpX<=202){hpX = hpX + (202-10)*10/100;}
        treasureX = random(600);
        treasureY = random(440);
      } 
      if (treasureX > fighterX && treasureY > fighterY && treasureX < fighterX + 51 && treasureY < fighterY +51){
-       if(hpX<=203){hpX = hpX + (203-10)*10/100;}
+       if(hpX<=202){hpX = hpX + (202-10)*10/100;}
        treasureX = random(600);
        treasureY = random(440); 
      }
      if (treasureX < fighterX && treasureX + 41 > fighterX && treasureY == fighterY){
-       if(hpX<=203){hpX = hpX + (203-10)*10/100;}
+       if(hpX<=202){hpX = hpX + (202-10)*10/100;}
        treasureX = random(600);
        treasureY = random(440); 
      }
      if (treasureX > fighterX && fighterX + 51 > treasureX && treasureY == fighterY){
-       if(hpX<=203){hpX = hpX + (203-10)*10/100;}
+       if(hpX<=202){hpX = hpX + (202-10)*10/100;}
        treasureX = random(600);
        treasureY = random(440); 
      }
